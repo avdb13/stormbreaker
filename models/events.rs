@@ -1,0 +1,20 @@
+#![allow(dead_code)]
+pub struct Events {
+  pub topological_ordering: i64,
+  pub event_id: String,
+  pub type: String,
+  pub room_id: String,
+  pub content: Option<String>,
+  pub unrecognized_keys: Option<String>,
+  pub processed: bool,
+  pub outlier: bool,
+  pub depth: i64,
+  pub origin_server_ts: Option<i64>,
+  pub received_ts: Option<i64>,
+  pub sender: Option<String>,
+  pub contains_url: Option<bool>,
+  pub instance_name: Option<String>,
+  pub stream_ordering: Option<i64>,
+  pub state_key: Option<String>,
+  pub rejection_reason: Option<String>,
+}
